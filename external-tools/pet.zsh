@@ -9,6 +9,7 @@ if [[ $commands[pet] ]]; then
 
   stty -ixon
 
-  bindkey '^S' pet-select
+  # <Alt+s>: trigger snippet autocompletion
+  bindkey '^[s' pet-select
 
 fi

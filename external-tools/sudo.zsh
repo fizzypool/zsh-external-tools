@@ -18,7 +18,7 @@ if [ $commands[sudo] ]; then
   }
   zle -N sudo-command-line
 
-  # <Alt+s>: insert sudo in the commandline
-  bindkey "^[s" sudo-command-line
+  # <Alt+Shift+s>: insert sudo in the commandline
+  bindkey "^[S" sudo-command-line
 
 fi
