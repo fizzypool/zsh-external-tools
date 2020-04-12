@@ -1,6 +1,6 @@
 if [ $commands[fasd] ]; then
 
-  fasd_cache="~/.fasd-cache"
+  fasd_cache="${HOME}/.fasd-cache"
 
   if [[ ! -d "${fasd_cache}" ]]; then
     mkdir -p "${fasd_cache}"
