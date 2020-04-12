@@ -1,6 +1,6 @@
 if [ $commands[sudo] ]; then
 
-  abbrev-alias S="sudo" # Uppercase because lowercase is abbrev of `fasd`.
+  abbrev-alias S="sudo"
 
   sudo-command-line() {
     [[ -z $BUFFER ]] && zle up-history
@@ -16,8 +16,9 @@ if [ $commands[sudo] ]; then
       LBUFFER="sudo $LBUFFER"
     fi
   }
-
   zle -N sudo-command-line
-  bindkey "\es" sudo-command-line
+
+  # <Alt+s>: insert sudo in the commandline
+  bindkey "^[s" sudo-command-line
 
 fi
