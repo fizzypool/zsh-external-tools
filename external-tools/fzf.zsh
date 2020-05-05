@@ -1,9 +1,6 @@
 # Enable auto-completion.
 if [[ -f "/usr/share/fzf/completion.zsh" ]]; then
   source "/usr/share/fzf/completion.zsh"
-
-  # <Alt+e>: trigger fzf completion
-  bindkey '^[e' fzf-completion
 fi
 
 # Setup key-bindings.
