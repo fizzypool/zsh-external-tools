@@ -1,11 +1,21 @@
 # Enable auto-completion.
 if [[ -f "/usr/share/fzf/completion.zsh" ]]; then
   source "/usr/share/fzf/completion.zsh"
+
+  # <Alt+i>: trigger fzf completion
+  bindkey '^[i' fzf-completion
 fi
 
 # Setup key-bindings.
 if [[ -f "/usr/share/fzf/key-bindings.zsh" ]]; then
   source "/usr/share/fzf/key-bindings.zsh"
+
+  # <Alt+h>: trigger fzf history widget
+  bindkey '^[h' fzf-history-widget
+  # <Alt+h>: trigger fzf cd widget
+  bindkey '^[c' fzf-cd-widget
+  # <Alt+h>: trigger fzf file widget
+  bindkey '^[f' fzf-file-widget
 fi
 
 if [[ $commands[fzf] ]]; then
