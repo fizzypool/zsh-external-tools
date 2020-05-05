@@ -2,8 +2,8 @@
 if [[ -f "/usr/share/fzf/completion.zsh" ]]; then
   source "/usr/share/fzf/completion.zsh"
 
-  # <Alt+i>: trigger fzf completion
-  bindkey '^[i' fzf-completion
+  # <Alt+e>: trigger fzf completion
+  bindkey '^[e' fzf-completion
 fi
 
 # Setup key-bindings.
