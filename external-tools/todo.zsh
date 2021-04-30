@@ -27,3 +27,11 @@ export PATH="/Applications/VMware OVF Tool:${PATH}"
 
 # Set pipenv maximum upper directory search for projects.
 export PIPENV_MAX_DEPTH=100
+
+function tracktime() {     
+    start=$(gdate +%s%N)
+    zsh -c $1
+    end=$(gdate +%s%N)
+    runtime=$(((end-start)/1000000000.0))
+    echo "$runtime ms"     
+}
