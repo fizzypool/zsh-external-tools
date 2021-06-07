@@ -1,13 +1,13 @@
 # NVM support
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+#[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+#[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 
 # Jabba support
-[ -s "/Users/cl-alessandro-molari/.jabba/jabba.sh" ] && source "/Users/cl-alessandro-molari/.jabba/jabba.sh"
+#[ -s "/Users/cl-alessandro-molari/.jabba/jabba.sh" ] && source "/Users/cl-alessandro-molari/.jabba/jabba.sh"
 
 # GhcUp support
-[ -f "/Users/cl-alessandro-molari/.ghcup/env" ] && source "/Users/cl-alessandro-molari/.ghcup/env" # ghcup-env
+#[ -f "/Users/cl-alessandro-molari/.ghcup/env" ] && source "/Users/cl-alessandro-molari/.ghcup/env" # ghcup-env
 
 # Add Cargo to PATH.
 export PATH="$HOME/.cargo/bin:$PATH"
