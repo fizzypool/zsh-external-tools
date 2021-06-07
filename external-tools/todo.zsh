@@ -1,7 +1,14 @@
 # NVM support
-export NVM_DIR="$HOME/.nvm"
-#[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
-#[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+if [ $commands[nvm] ]; then
+  echo "Loading NVM"
+  export NVM_DIR="$HOME/.nvm"
+  if [ -s "/usr/local/opt/nvm/nvm.sh" ]; then
+    source "/usr/local/opt/nvm/nvm.sh"
+  fi
+  if [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ]; then
+    source "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+  fi
+fi
 
 # Jabba support
 #[ -s "/Users/cl-alessandro-molari/.jabba/jabba.sh" ] && source "/Users/cl-alessandro-molari/.jabba/jabba.sh"
