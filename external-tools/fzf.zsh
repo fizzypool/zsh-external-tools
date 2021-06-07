@@ -20,11 +20,11 @@ if [ $commands[fzf] ]; then
   
   # Setup custom keybindings.
   #   <Alt+h>: trigger fzf history widget
-  bindkey '^[h' fzf-history-widget
+  #bindkey '^[h' fzf-history-widget
   #   <Alt+h>: trigger fzf cd widget
-  bindkey '^[c' fzf-cd-widget
+  #bindkey '^[c' fzf-cd-widget
   #   <Alt+h>: trigger fzf file widget
-  bindkey '^[f' fzf-file-widget
+  #bindkey '^[f' fzf-file-widget
 
   # Set the default source for `fzf`
   if [[ $commands[ag] ]]; then
