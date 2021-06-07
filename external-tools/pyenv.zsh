@@ -1,6 +1,6 @@
 if [ $commands[pyenv] ]; then
   export PYENV_ROOT="$HOME/.pyenv"
-  export PATH="${PYENV_ROOT}/bin"
+  export PATH="${PYENV_ROOT}/bin:${PATH}"
   if [[ $OSTYPE == darwin* ]]; then
     # Note: Manual init to speedup
     export PATH=":${PYENV_ROOT}/shims:${PATH}"
