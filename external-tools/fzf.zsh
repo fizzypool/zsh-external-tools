@@ -12,13 +12,13 @@ if [ $commands[fzf] ]; then
   fi
 
   # Setup standard keybindings.
-  #if [[ -f "/usr/share/fzf/key-bindings.zsh" ]]; then
-  #  source "/usr/share/fzf/key-bindings.zsh"
-  #elif [[ -f "/usr/local/opt/fzf/shell/key-bindings.zsh" ]]; then
-  #  source "/usr/local/opt/fzf/shell/key-bindings.zsh"
-  #fi
+  if [[ -f "/usr/share/fzf/key-bindings.zsh" ]]; then
+    source "/usr/share/fzf/key-bindings.zsh"
+  elif [[ -f "/usr/local/opt/fzf/shell/key-bindings.zsh" ]]; then
+    source "/usr/local/opt/fzf/shell/key-bindings.zsh"
+  fi
   
-  # Setup custom keybindings.
+  # Setup custom keybindings. (NOT WORKING WITH ALT+ARROW)
   #   <Alt+h>: trigger fzf history widget
   #bindkey '^[h' fzf-history-widget
   #   <Alt+h>: trigger fzf cd widget
