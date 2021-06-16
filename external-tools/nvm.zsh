@@ -1,5 +1,4 @@
-if [ $commands[nvm] ]; then
-  echo "Loading NVM"
+if [ -d "$HOME/.nvm" ]; then
   export NVM_DIR="$HOME/.nvm"
   if [ -s "/usr/local/opt/nvm/nvm.sh" ]; then
     source "/usr/local/opt/nvm/nvm.sh"
