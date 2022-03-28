@@ -1,5 +1,3 @@
-
-
 if [ $commands[rbenv] ]; then
   if [[ $OSTYPE == darwin* ]]; then
     # Note: Manual init to speedup
@@ -22,6 +20,6 @@ if [ $commands[rbenv] ]; then
       esac
     }
   elif [[ $OSTYPE == linux* ]]; then
-    eval $(pyenv init -)
+    eval $(rbenv init -)
   fi
 fi
